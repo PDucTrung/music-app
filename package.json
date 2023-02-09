@@ -1,0 +1,28 @@
+{
+  "name": "music-app-js",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.3",
+    "lodash": "^4.17.21",
+    "slick-carousel": "^1.8.1"
+  },
+  "description": "listen to music",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "music-app-javascript"
+  },
+  "author": "trung",
+  "license": "ISC"
+}

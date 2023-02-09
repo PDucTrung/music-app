@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="image/logo.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <br />
+        <h2 class="title">Listen the best albums</h2>
+        <div class="list-albums mt-4">
+          <!-- script -->
+        </div>
+      </div>
+
+      <!-- modal music -->
+      <div class="wrapper-offcanvas">
+        <div class="wrapper-close-box-music">
+          <div class="close-box-music">
+            <i
+              class="icofont-rounded-up m-auto icon-close-music-offcanvas"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasBottom"
+            ></i>
+          </div>
+        </div>
+
+        <!--  -->
+        <div
+          class="offcanvas offcanvas-bottom"
+          tabindex="-1"
+          id="offcanvasBottom"
+        >
+          <div class="close-box-music-btn">
+            <i
+              class="icofont-rounded-down m-auto icon-close-music-offcanvas"
+              data-bs-dismiss="offcanvas"
+            ></i>
+          </div>
+          <div class="offcanvas-body small">
+            <div class="offcanvas-music-wrapper">
+              <!-- audio -->
+              <audio id="audio" src=""></audio>
+              <div class="row">
+                <div class="col-3">
+                  <div class="music-content">
+                    <!-- script -->
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="control">
+                    <!--  -->
+                    <div class="icon-music prev">
+                      <i class="icofont-ui-previous"></i>
+                    </div>
+                    <div class="icon-music-play">
+                      <i class="icofont-ui-play"></i>
+                    </div>
+                    <div class="icon-music next">
+                      <i class="icofont-ui-next"></i>
+                    </div>
+
+                    <!--  -->
+                    <div class="bg-progress">
+                      <div class="progress-container" id="progress-container">
+                        <div class="progress" id="progress"></div>
+                      </div>
+                      <div class="bg-time mt-1">
+                        <div class="curent-time"></div>
+                        <div class="total-time"></div>
+                      </div>
+                    </div>
+
+                    <!--  -->
+                    <div class="icon-music volume mute">
+                      <i class="icofont-ui-volume"></i>
+                    </div>
+                    <div class="icon-music random">
+                      <i class="icofont-random"></i>
+                    </div>
+                    <div class="icon-music repeat">
+                      <i class="icofont-refresh"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script -->
+
+    <!-- music box html -->
+    <script type="text/html" id="music-box">
+      <!-- box -->
+      <div class="music-box">
+        <div class="wrapper-music-box">
+          <img class="img-music-box" src="${image}" alt="music box" />
+          <i
+            class="icofont-play-alt-2 icon-play-music-box"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasBottom"
+          ></i>
+          <div class="bg-overlay"></div>
+        </div>
+        <div class="music-box-content mt-2">
+          <a class="name-music-box fs-20" href="">${name}</a>
+          <p class="name-single-music-box fs-14">${single}</p>
+        </div>
+      </div>
+    </script>
+
+    <!-- music offcanvas html -->
+    <script type="text/html" id="music-offcanvas">
+      <!-- music -->
+      <div class="row">
+        <div class="col-4">
+          <img src="${image}" alt="image-music" />
+        </div>
+        <div class="col-8">
+          <div class="mt-3">
+            <a class="name-music-box fs-20" href="">${name}</a>
+            <p class="name-single-music-box fs-14">${single}</p>
+          </div>
+        </div>
+      </div>
+    </script>
+
+    <!-- main -->
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
