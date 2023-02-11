@@ -23,6 +23,10 @@ body {
   background-color: var(--bg-color);
 }
 
+header{
+ height: 56px;
+}
+
 /* image */
 
 img {

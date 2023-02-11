@@ -8,6 +8,10 @@
   </head>
   <body>
     <div id="app">
+      <!-- header -->
+      <header class="header"></header>
+
+      <!-- children -->
       <div class="container">
         <br />
         <h2 class="title">Listen the best albums</h2>
@@ -27,7 +31,6 @@
             ></i>
           </div>
         </div>
-
         <!--  -->
         <div
           class="offcanvas offcanvas-bottom"
@@ -62,7 +65,6 @@
                     <div class="icon-music next">
                       <i class="icofont-ui-next"></i>
                     </div>
-
                     <!--  -->
                     <div class="bg-progress">
                       <div class="progress-container" id="progress-container">
@@ -73,7 +75,6 @@
                         <div class="total-time"></div>
                       </div>
                     </div>
-
                     <!--  -->
                     <div class="icon-music volume mute">
                       <i class="icofont-ui-volume"></i>
@@ -131,6 +132,9 @@
         </div>
       </div>
     </script>
+
+    <!-- header -->
+    <script type="module" src="js/layout/header.js"></script>
 
     <!-- main -->
     <script type="module" src="js/main.js"></script>
