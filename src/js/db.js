@@ -34,4 +34,11 @@ export const musics = [
     src: "audio/DeVuong.mp3",
     image: "image/music-5.jpg",
   },
+  {
+    id: 6,
+    name: "Khuất Lối",
+    single: "H-Kray",
+    src: "audio/KhuatLoi.mp3",
+    image: "image/music-6.jpg",
+  },
 ];
